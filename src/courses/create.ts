@@ -9,27 +9,32 @@ async function main() {
       {
       name: "Elixir",
       duration:150,
-      description:"Curso de Elixir"
+      description:"Curso de Elixir",
+      fk_id_teachers:""
     },
     {
       name: "Ruby",
       duration:100,
-      description:"Curso de Ruby"
+      description:"Curso de Ruby",
+      fk_id_teachers:""
     },
     {
       name: "Java",
       duration:250,
-      description:"Curso de Java"
+      description:"Curso de Java",
+      fk_id_teachers:""
     },
     {
       name: "Python",
       duration:200,
-      description:"Curso de Python"
+      description:"Curso de Python",
+      fk_id_teachers:""
     },
     {
       name: "Rust",
       duration:350,
-      description:"Rust"
+      description:"Rust",
+      fk_id_teachers:""
     }
   ],
     
