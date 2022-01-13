@@ -5,11 +5,18 @@ const prisma = new PrismaClient();
 async function main(){
   const result = await prisma.authors.create({
     data:{
-      name:"Robert C. Martin",
+      name:"Mayk Brito",
       books:{
-        create:{
-          name:"Código Limpo"
-        }
+      createMany:{
+        data:[
+          {
+            name:"Como começar na programação"
+          },
+          {
+            name:"Como ser muito produtivo"
+          }
+        ]
+      }
       }
     }
   })
