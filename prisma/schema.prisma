@@ -13,11 +13,11 @@ model Courses {
   description    String?
   duration       Int
   created_at     DateTime @default(now())
-  teacher        Teachers @relation(fields: [fk_id_teachers], references: [id])
+  teacher        Teachers @relation(fields: [fk_id_teachers], references: [id], onDelete: Cascade)
   fk_id_teachers String   @unique
 
   courses_modules CoursesModules[]
-  modules         Modules?         @relation(fields: [modules_id], references: [id])
+  modules         Modules?         @relation(fields: [modules_id], references: [id], onDelete: Cascade)
   modules_id      String?
   @@map("courses")
 }
