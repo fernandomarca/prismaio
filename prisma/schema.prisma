@@ -52,7 +52,7 @@ model Modules {
   name        String   @unique
   description String
   created_at  DateTime @default(now())
-  updated_at  DateTime @default(now())
+  updated_at  DateTime @updatedAt
 
   courses_modules CoursesModules[]
   courses         Courses[]
